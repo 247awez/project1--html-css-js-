@@ -1,0 +1,333 @@
+body{
+  color :black;
+  font-size: 1rem;
+  /* font-family: 'Teko', sans-serif; */
+}
+
+.beforeimg {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.beforeimg::before {
+  content: '';
+  background: url('https://html5-chat.com/blog/wp-content/uploads/2020/03/57e4d6434b52a914ea898675c6203f78083edbed505177417d2d7f_1280_background-750x410.png') 
+  no-repeat center center/cover;
+  position: absolute;
+  opacity: 0.3;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 70vh;
+  z-index: -1;
+}
+
+#beforeimg1 {
+  margin: 0px 0px;
+  PADDING: 0px 0px;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: rgba(91, 160, 224, 0.644);
+  background-image: linear-gradient(to right, #e794e3dc,white ,#319fdf); 
+animation-name:backgroundchangereverse;
+animation-duration: 1s;
+font-size: 1rem;
+}
+#beforeimg1 a{
+  color:black;
+}
+#beforeimg::before {
+  content: '';
+ padding: 0px 0px;
+  opacity: 0.3;
+  top: 0px;
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+}
+nav {
+  background: transparent;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+footer{
+  background-color:transparent;
+color: #000000;
+}
+
+footer .row .col img{
+  height: 3vh;
+}
+footer .row .col img:hover{
+  box-shadow: 0px 0px 12px 12px rgba(50, 164, 230, 0.712);
+  
+}
+#insta:hover{
+  box-shadow: 0px 0px 12px 12px rgba(143, 33, 177, 0.623);
+}
+#github:hover{
+  box-shadow: 0px 0px 12px 12px rgba(10, 1, 1, 0.712);
+}
+#fb:hover{
+  box-shadow: 0px 0px 12px 12px rgba(8, 81, 122, 0.986);
+}
+.nav-link{
+  color:black;
+}
+footer .row{
+  margin: 2vh;
+  /* margin-left: 5vh; */
+  width:35vh;
+}
+ 
+
+
+/* navbar underline effect */
+.navbar .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+@media only screen and (min-width: 960px) {
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0.7em;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-brand {
+    padding: 0 0.7em;
+  }
+}
+.navbar .navbar-nav .nav-link {
+  position: relative;
+}
+.navbar .navbar-nav .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #000000;
+  color: transparent;
+  width: 0%;
+  content: '';
+  height: 3px;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+/* font for grid */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+}
+
+section{
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #e0ffff;
+  }
+section:nth-child(2){
+  color: #42455a;
+  background: #e0ffff;
+} 
+section:nth-child(3){
+  color: #e0ffff;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: #e0ffff;
+}
+section .container{
+  margin:50px;
+}
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 20px;
+  padding: 20px;
+  background: #ffffff;
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.text-box img{
+  width: 40vh;
+  height: auto;
+}
+
+
+
+
+
+
+#beforeimg1:hover{
+  animation: forwards;
+  animation-name: backgroundchange;
+animation-duration: 1s;
+}
+@keyframes  backgroundchange 
+  
+{
+  form{
+    background-color: rgba(91, 160, 224, 0.644);
+    background-image: linear-gradient(to right, #e794e3dc,white ,#319fdf); 
+  
+  }
+  to{
+    background-color: rgba(91, 160, 224, 0.644);
+    background-image: linear-gradient(to right,#319fdf ,white ,#e794e3dc); 
+  font-size: 1.4rem;
+  }
+}
+@keyframes backgroundchangereverse {
+  from{
+    font-size:1.4rem;
+
+  }
+  to{
+    font-size: 1rem;
+  }
+}
+
+
+
+/* auto typing */
+
+
+.wrapper{
+  display: inline-flex;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  
+}
+.wrapper .static-txt{
+  font-size: 3rem;
+  color:rgb(0, 0, 0) ;
+  font-weight: bold;
+  margin-top: 9px;
+
+}
+.wrapper .dynamic-texts{
+margin-left: 15px;
+height: 90px;
+padding-left: 0px;
+line-height: 90px;
+/* background: red; */
+overflow: hidden;
+
+}
+
+@keyframes slide {
+  100%{
+  top: -270px;  
+  }
+}
+
+.dynamic-texts li{
+  list-style: none;
+  font-size:3rem ;
+  font-weight:bold ;
+  color: rgba(52, 134, 130, 0.705);
+  animation: slide 4.5s steps(3) infinite;
+position: relative;
+top: 0px;}
+
+.dynamic-texts li span{
+ position: relative;
+}
+
+ .dynamic-texts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+border-left: 2px solid rgb(93, 42, 42);
+  height: 100%;
+  width: 100%;
+  animation: typing 1.5s steps(13 ) infinite;
+  background: white;
+}
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+
+#btnh:hover{
+  animation-name: btnhover ;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+ 
+}
+@keyframes btnhover {
+  from{
+    width: initial;
+  }
+  to{
+    width: 15rem;
+    background-color: rgba(104, 182, 104, 0.698);
+  }
+  
+}
